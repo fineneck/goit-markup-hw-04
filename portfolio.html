@@ -25,22 +25,31 @@
           <a href="./index.html" class="primary"
             >Web<span class="logo-white">Studio</span></a
           >
+
           <ul class="site-nav">
-            <li class="item"><a href="./index.html" class="link">Студія</a></li>
             <li class="item">
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
+              <a href="./index.html" class="link current">Студія</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
             <li class="item"><a href="#Контакти" class="link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="cont-nav">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
+             <a href="mailto:info@devstudio.com" class="link"
+              ><svg class="icon-mail" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link">
+              <svg class="icon-phone" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg> +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -49,6 +58,7 @@
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">#Портфоліо</h1>
+          
           <!--Кнопки-->
           <ul class="button-list">
             <li class="item">
@@ -69,7 +79,6 @@
           </ul>
 
           <!--Посилання-->
-
           <ul class="prod-list">
             <li class="item">
               <img
@@ -183,9 +192,11 @@
         </div>
       </section>
     </main>
+
     <!--Нижня лінія-->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-contacts">
+        <div class="web-contacts">
         <a href="./index.html" class="primary"
           >Web<span class="logo-black">Studio</span></a
         >
@@ -214,6 +225,44 @@
           </ul>
         </address>
       </div>
+      <div class="social-links">
+        <p class="features-title">ПРИЄДНУЙТЕСЬ</p>
+        <ul class="social-list">
+          <li class="contact-link"><a href="https://www.instagram.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="link"><svg class="icon-dev" width="20" height="20">
+              <use href="./images/icons.svg#instagram"
+            </svg></a>
+          </li>
+          <li class="contact-link">
+            <a href="https://twitter.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="link"><svg class="icon-dev" width="20" height="20">
+              <use href="./images/icons.svg#twitter"
+            </svg></a>
+          </li>
+          <li class="contact-link">
+            <a href="https://www.facebook.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="link"><svg class="icon-dev" width="20" height="20">
+              <use href="./images/icons.svg#facebook"
+            </svg></a>
+          </li>
+          <li class="contact-link">
+            <a href="https://www.linkedin.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="link"><svg class="icon-dev" width="20" height="20">
+              <use href="./images/icons.svg#linkedin"
+            </svg></a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
     </footer>
   </body>
 </html>
