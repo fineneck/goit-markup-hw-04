@@ -126,12 +126,14 @@ img {
 .cont-nav {
   display: flex;
   margin-left: auto;
+  
 }
 .cont-nav .item + .item {
   margin-left: 50px;
 }
 .cont-nav .link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -146,6 +148,16 @@ img {
 .cont-nav .link:focus {
   color: var(--accent-text-color);
 }
+.icon-mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-phone {
+  margin-right: 13px;
+  fill: currentColor;
+}
+
+
 
 /*hero*/
 .hero {
