@@ -302,8 +302,36 @@ img {
 .icon-dev {
   fill: var(--icons-color);
 }
-/*production*/
 
+/*clients*/
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 91px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.clients-link {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.icon-client {
+ fill: var(--icons-color);
+}
+.clients-link:hover .icon-client,
+.clients-link:focus .icon-client {
+  fill: var(--accent-text-color);
+}
+
+
+/*production*/
 .prod-list {
   display: flex;
   flex-wrap: wrap;
