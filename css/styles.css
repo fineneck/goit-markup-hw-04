@@ -327,10 +327,11 @@ img {
 }
 .clients-link .link:hover,
 .clients-link .link:focus {
-  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
 }
-.icon-client:hover,
-.icon-client:focus {
+.clients-link .link:hover .icon-client,
+.clients-link .link:focus .icon-client {
   fill: var(--accent-text-color);
 }
 
