@@ -162,11 +162,10 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--background-color);
+  background-color: #C4C4C4;
   text-align: center;
 
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -177,7 +176,7 @@ img {
     url("../images/team-for-hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .hero-title {
@@ -194,11 +193,10 @@ img {
 /*features*/
 .icons {
   display: flex;
-  text-align: center;
+  align-items: center;
   justify-content: center;
   width: 270px;
   height: 120px;
-  padding: 25px 0;
   margin-bottom: 30px;
   border-radius: 4px;
 
@@ -281,25 +279,28 @@ img {
   justify-content: center;
   gap: 10px;
 }
-.contact-link {
-  width: 44px;
+
+.contact-link .link {
+  display: block;
+  padding: 12px;
+
   height: 44px;
-  padding: 12px 12px;
-  cursor: pointer;
+  
+  fill: var(--icons-color);
   border-radius: 50%;
 }
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--white-text-color);
+.contact-link .link:hover,
+.contact-link .link:focus {
+  fill: var(--white-text-color);
   background-color: var(--accent-text-color);
-}
+ }
 .contact-link:hover .icon-dev,
-.contact-link:focus .icon-dev {
+.contact-link:focus .icon-dev,
+.contact-link .icon-dev:hover,
+.contact-link .icon-dev:focus {
   fill: var(--white-text-color);
 }
-.icon-dev {
-  fill: var(--icons-color);
-}
+
 
 /*clients*/
 .section-clients {
@@ -311,20 +312,25 @@ img {
   justify-content: center;
   gap: 30px;
 }
-.clients-link {
+.clients-link .link {
+  display: block;
+
   width: 170px;
   height: 92px;
   padding: 16px 32px;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  cursor: pointer;
 }
 .icon-client {
   fill: var(--icons-color);
 }
-.clients-link:hover .icon-client,
-.clients-link:focus .icon-client {
+.clients-link .link:hover,
+.clients-link .link:focus {
+  color: var(--accent-text-color);
+}
+.icon-client:hover,
+.icon-client:focus {
   fill: var(--accent-text-color);
 }
 
@@ -489,8 +495,12 @@ address {
   justify-content: start;
   gap: 10px;
 }
+.social-list .icon-dev {
+  fill: var(--white-text-color);
+}
 .social-list .contact-link {
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 .social-list .contact-link:hover,
 .social-list .contact-link:focus {
